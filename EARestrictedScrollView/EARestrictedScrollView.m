@@ -92,8 +92,13 @@
 - (void)setRestrictionArea:(CGRect)restrictionArea {
     _restrictionArea = restrictionArea;
     
-    [self.containerView setFrame:CGRectMake(-restrictionArea.origin.x, -restrictionArea.origin.y, restrictionArea.size.width, restrictionArea.size.height)];
-    [super setContentSize:CGSizeMake(restrictionArea.size.width, restrictionArea.size.height)];
+    if(CGRectEqualToRect(restrictionArea, CGRectZero)) {
+        [self.containerView setFrame:CGRectMake(0.f, 0.f, self.containerView.frame.size.width, self.containerView.frame.size.height)];
+        [super setContentSize:CGSizeMake(self.containerView.frame.size.width, self.containerView.frame.size.height)];
+    } else {
+        [self.containerView setFrame:CGRectMake(-restrictionArea.origin.x, -restrictionArea.origin.y, self.containerView.frame.size.width, self.containerView.frame.size.height)];
+        [super setContentSize:CGSizeMake(restrictionArea.size.width, restrictionArea.size.height)];
+    }
 }
 
 @end
