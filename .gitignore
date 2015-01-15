@@ -1,0 +1,32 @@
+#OS noise
+profile
+[Tt]humbs.db
+*.DS_Store
+*~
+*.swp
+*.out
+*.bak*
+
+#Other CSM
+.hg
+.svn
+CVS
+
+#Xcode noise
+*.log
+*~.nib
+*.moved-aside
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+!xcshareddata
+
+#Project files
+[Bb]uild/
+DerivedData/
+
+#CocoaPods
+Pods
+#Pods/*.xcodeproj/*
+#!Pods/*.xcodeproj/project.pbxproj
