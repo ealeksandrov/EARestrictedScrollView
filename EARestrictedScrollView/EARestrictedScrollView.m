@@ -7,8 +7,6 @@
 
 @interface EARestrictedScrollView ()
 
-@property(nonatomic, assign) CGPoint containerOffset;
-
 @property(nonatomic, strong) UIView *containerView;
 
 @end
@@ -76,23 +74,36 @@
 
 #pragma mark - Custom offset getters and setters
 
-- (CGPoint)contentOffset {
+- (CGPoint)alignedContentOffset {
     CGPoint originalOffset = [super contentOffset];
-    CGPoint newOffset = CGPointMake(originalOffset.x - self.containerOffset.x, originalOffset.y - self.containerOffset.y);
+    CGPoint newOffset = CGPointMake(originalOffset.x + self.restrictionArea.origin.x, originalOffset.y + self.restrictionArea.origin.y);
     
+    NSLog(@"Returning aligned: %@",NSStringFromCGPoint(newOffset));
     return newOffset;
 }
 
-- (void)setContentSize:(CGSize)contentSize {
-    [super setContentSize:contentSize];
+- (void)setAlignedContentOffset:(CGPoint)contentOffset {
+    CGPoint newOffset = CGPointMake(contentOffset.x - self.restrictionArea.origin.x, contentOffset.y - self.restrictionArea.origin.y);
     
+    [super setContentOffset:newOffset];
+}
+
+- (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated {
+    CGPoint newOffset = CGPointMake(contentOffset.x - self.restrictionArea.origin.x, contentOffset.y - self.restrictionArea.origin.y);
+    
+    [super setContentOffset:newOffset animated:animated];
+}
+
+- (void)setContentSize:(CGSize)contentSize {
     [self.containerView setFrame:CGRectMake(self.containerView.frame.origin.x, self.containerView.frame.origin.y, contentSize.width, contentSize.height)];
+    [self setRestrictionArea:CGRectMake(self.restrictionArea.origin.x, self.restrictionArea.origin.y, contentSize.width, contentSize.height)];
 }
 
 - (void)setRestrictionArea:(CGRect)restrictionArea {
     _restrictionArea = restrictionArea;
     
     if(CGRectEqualToRect(restrictionArea, CGRectZero)) {
+        [super setContentOffset:CGPointMake(-self.containerView.frame.origin.x, -self.containerView.frame.origin.y)];
         [self.containerView setFrame:CGRectMake(0.f, 0.f, self.containerView.frame.size.width, self.containerView.frame.size.height)];
         [super setContentSize:CGSizeMake(self.containerView.frame.size.width, self.containerView.frame.size.height)];
     } else {
