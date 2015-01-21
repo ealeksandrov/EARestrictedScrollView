@@ -13,10 +13,15 @@
 		5547319C1A7064D000A9B199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 554731931A7064D000A9B199 /* AppDelegate.m */; };
 		5547319D1A7064D000A9B199 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554731951A7064D000A9B199 /* ViewController.m */; };
 		5547319F1A7064D000A9B199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 554731981A7064D000A9B199 /* main.m */; };
-		556603741A6EE15D00D05516 /* EARestrictedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 556603731A6EE15D00D05516 /* EARestrictedScrollView.m */; };
+		7A4A9863E08D3831EE55EEFD /* libPods-EARestrictedScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EARestrictedScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5010D5964908ACD403AA1C2A /* Pods-EARestrictedScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EARestrictedScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-EARestrictedScrollView/Pods-EARestrictedScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		550167851A6FFF7E0099AFB0 /* EARestrictedScrollView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EARestrictedScrollView.podspec; path = ../EARestrictedScrollView.podspec; sourceTree = "<group>"; };
+		550167861A6FFF7E0099AFB0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		550167871A6FFF7E0099AFB0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5547318E1A7064D000A9B199 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5547318F1A7064D000A9B199 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		554731901A7064D000A9B199 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -27,8 +32,7 @@
 		554731971A7064D000A9B199 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554731981A7064D000A9B199 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		556603491A6EE13500D05516 /* EARestrictedScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EARestrictedScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		556603721A6EE15D00D05516 /* EARestrictedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EARestrictedScrollView.h; sourceTree = "<group>"; };
-		556603731A6EE15D00D05516 /* EARestrictedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EARestrictedScrollView.m; sourceTree = "<group>"; };
+		98B65D76CF28F19C0BEB4161 /* Pods-EARestrictedScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EARestrictedScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EARestrictedScrollView/Pods-EARestrictedScrollView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,12 +40,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4A9863E08D3831EE55EEFD /* libPods-EARestrictedScrollView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550167831A6FFF450099AFB0 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				554731911A7064D000A9B199 /* Source */,
+				5547318D1A7064D000A9B199 /* Resources */,
+				554731961A7064D000A9B199 /* Supporting-files */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		550167841A6FFF6C0099AFB0 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				550167851A6FFF7E0099AFB0 /* EARestrictedScrollView.podspec */,
+				550167871A6FFF7E0099AFB0 /* README.md */,
+				550167861A6FFF7E0099AFB0 /* LICENSE */,
+			);
+			name = Metadata;
+			sourceTree = "<group>";
+		};
 		5547318D1A7064D000A9B199 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,11 +100,11 @@
 		556603401A6EE13400D05516 = {
 			isa = PBXGroup;
 			children = (
-				5566034B1A6EE13500D05516 /* EARestrictedScrollView */,
-				5547318D1A7064D000A9B199 /* Resources */,
-				554731911A7064D000A9B199 /* Source */,
-				554731961A7064D000A9B199 /* Supporting-files */,
+				550167841A6FFF6C0099AFB0 /* Metadata */,
+				550167831A6FFF450099AFB0 /* Example */,
+				7E6A4A247CE57467BF286DE3 /* Frameworks */,
 				5566034A1A6EE13500D05516 /* Products */,
+				8C10C58924AA09B206C5E825 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,13 +116,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5566034B1A6EE13500D05516 /* EARestrictedScrollView */ = {
+		7E6A4A247CE57467BF286DE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				556603721A6EE15D00D05516 /* EARestrictedScrollView.h */,
-				556603731A6EE15D00D05516 /* EARestrictedScrollView.m */,
+				07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */,
 			);
-			path = EARestrictedScrollView;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C10C58924AA09B206C5E825 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98B65D76CF28F19C0BEB4161 /* Pods-EARestrictedScrollView.debug.xcconfig */,
+				5010D5964908ACD403AA1C2A /* Pods-EARestrictedScrollView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5566036C1A6EE13500D05516 /* Build configuration list for PBXNativeTarget "EARestrictedScrollView" */;
 			buildPhases = (
+				AB3D417D987BDDA46633FBB3 /* Check Pods Manifest.lock */,
 				556603451A6EE13500D05516 /* Sources */,
 				556603461A6EE13500D05516 /* Frameworks */,
 				556603471A6EE13500D05516 /* Resources */,
+				E03906D8339F845936584851 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,6 +200,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB3D417D987BDDA46633FBB3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E03906D8339F845936584851 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EARestrictedScrollView/Pods-EARestrictedScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		556603451A6EE13500D05516 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -173,7 +241,6 @@
 				5547319D1A7064D000A9B199 /* ViewController.m in Sources */,
 				5547319C1A7064D000A9B199 /* AppDelegate.m in Sources */,
 				5547319F1A7064D000A9B199 /* main.m in Sources */,
-				556603741A6EE15D00D05516 /* EARestrictedScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +327,7 @@
 		};
 		5566036D1A6EE13500D05516 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B65D76CF28F19C0BEB4161 /* Pods-EARestrictedScrollView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -268,13 +336,13 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting-files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		5566036E1A6EE13500D05516 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5010D5964908ACD403AA1C2A /* Pods-EARestrictedScrollView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -283,7 +351,6 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting-files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

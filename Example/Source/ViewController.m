@@ -4,7 +4,7 @@
 //  Copyright (c) 2015 Evgeny Aleksandrov. License: MIT.
 
 #import "ViewController.h"
-#import "EARestrictedScrollView.h"
+#import <EARestrictedScrollView/EARestrictedScrollView.h>
 
 @interface ViewController ()
 
