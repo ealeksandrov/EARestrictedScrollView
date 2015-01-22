@@ -18,6 +18,7 @@ CVS
 *.moved-aside
 Example/*.xcodeproj/*
 !Example/*.xcodeproj/project.pbxproj
+!Example/*.xcodeproj/project.pbxproj
 Example/*.xcworkspace/*
 !Example/*.xcworkspace/contents.xcworkspacedata
 !xcshareddata
@@ -28,6 +29,6 @@ Example/*.xcworkspace/*
 DerivedData/
 
 #CocoaPods
-Pods
-#Pods/*.xcodeproj/*
-#!Pods/*.xcodeproj/project.pbxproj
+#Pods
+Example/Pods/*.xcodeproj/*
+!Example/Pods/*.xcodeproj/project.pbxproj

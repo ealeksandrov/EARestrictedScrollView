@@ -1,0 +1,14 @@
+PODS:
+  - EARestrictedScrollView (0.1.0)
+
+DEPENDENCIES:
+  - EARestrictedScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  EARestrictedScrollView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EARestrictedScrollView: 8e9e6074bebb9cbbc01bc2b9a9e867856d7533d6
+
+COCOAPODS: 0.36.0.beta.1
