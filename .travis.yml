@@ -1,0 +1,11 @@
+language: objective-c
+install:
+  - export LANG=en_US.UTF-8
+  - gem i cocoapods --no-rdoc --no-ri --no-document --quiet
+  - brew update
+  - brew uninstall xctool
+  - brew install xctool
+  - cd Example; pod update ; cd ..
+script:
+  - xctool -workspace Example/EARestrictedScrollView.xcworkspace -scheme EARestrictedScrollView -sdk iphonesimulator
+  - pod lib lint --quick
