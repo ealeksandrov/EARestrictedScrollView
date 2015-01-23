@@ -1,13 +1,13 @@
-#EARestrictedScrollView - UIScrollView sublass with ability to restrict scrolling area
+#EARestrictedScrollView
 
 [![CI Status](http://img.shields.io/travis/ealeksandrov/EARestrictedScrollView.svg?style=flat)](https://travis-ci.org/ealeksandrov/EARestrictedScrollView)
 [![Version](https://img.shields.io/cocoapods/v/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 [![License](https://img.shields.io/cocoapods/l/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 
-## Usage
+**`UIScrollView` sublass with ability to restrict scrolling area.**
 
-In plain UIScrollView only contentSize can be changed, but not the origin of scrolling area. This simple and universal solution allows to restrict scrolling area with CGRect.
+In plain `UIScrollView` only `contentSize` can be changed, but not the origin of scrolling area. This simple and universal solution allows to restrict scrolling area with `CGRect`.
 
 ##CocoaPods
 
@@ -32,4 +32,4 @@ Created and maintained by Evgeny Aleksandrov ([@EAleksandrov](https://twitter.co
 
 ## License
 
-EARestrictedScrollView is available under the MIT license. See the LICENSE file for more info.
+`EARestrictedScrollView` is available under the MIT license. See the LICENSE file for more info.

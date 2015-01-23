@@ -78,7 +78,6 @@
     CGPoint originalOffset = [super contentOffset];
     CGPoint newOffset = CGPointMake(originalOffset.x + self.restrictionArea.origin.x, originalOffset.y + self.restrictionArea.origin.y);
     
-    NSLog(@"Returning aligned: %@",NSStringFromCGPoint(newOffset));
     return newOffset;
 }
 
