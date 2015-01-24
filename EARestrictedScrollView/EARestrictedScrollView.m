@@ -102,11 +102,14 @@
     _restrictionArea = restrictionArea;
     
     if(CGRectEqualToRect(restrictionArea, CGRectZero)) {
-        [super setContentOffset:CGPointMake(-self.containerView.frame.origin.x, -self.containerView.frame.origin.y)];
+        [super setContentOffset:CGPointMake([super contentOffset].x - self.containerView.frame.origin.x, [super contentOffset].y - self.containerView.frame.origin.y)];
         [self.containerView setFrame:CGRectMake(0.f, 0.f, self.containerView.frame.size.width, self.containerView.frame.size.height)];
         [super setContentSize:CGSizeMake(self.containerView.frame.size.width, self.containerView.frame.size.height)];
     } else {
+        CGPoint currentOffset = [super contentOffset];
+        
         [self.containerView setFrame:CGRectMake(-restrictionArea.origin.x, -restrictionArea.origin.y, self.containerView.frame.size.width, self.containerView.frame.size.height)];
+        [super setContentOffset:CGPointMake(currentOffset.x - restrictionArea.origin.x,currentOffset.y - restrictionArea.origin.y)];
         [super setContentSize:CGSizeMake(restrictionArea.size.width, restrictionArea.size.height)];
     }
 }
