@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "556603611A6EE13500D05516"
-               BuildableName = "EARestrictedScrollViewTests.xctest"
-               BlueprintName = "EARestrictedScrollViewTests"
+               BlueprintIdentifier = "55C388211A744E3C006093D1"
+               BuildableName = "Tests.xctest"
+               BlueprintName = "Tests"
                ReferencedContainer = "container:EARestrictedScrollView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "556603611A6EE13500D05516"
-               BuildableName = "EARestrictedScrollViewTests.xctest"
-               BlueprintName = "EARestrictedScrollViewTests"
+               BlueprintIdentifier = "55C388211A744E3C006093D1"
+               BuildableName = "Tests.xctest"
+               BlueprintName = "Tests"
                ReferencedContainer = "container:EARestrictedScrollView.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -8,4 +8,5 @@ install:
   - cd Example; pod update ; cd ..
 script:
   - xctool -workspace Example/EARestrictedScrollView.xcworkspace -scheme EARestrictedScrollView -sdk iphonesimulator
+  - xctool -workspace Example/EARestrictedScrollView.xcworkspace -scheme EARestrictedScrollView -sdk iphonesimulator test
   - pod lib lint --quick

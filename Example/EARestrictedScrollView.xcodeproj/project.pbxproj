@@ -13,11 +13,24 @@
 		5547319C1A7064D000A9B199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 554731931A7064D000A9B199 /* AppDelegate.m */; };
 		5547319D1A7064D000A9B199 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554731951A7064D000A9B199 /* ViewController.m */; };
 		5547319F1A7064D000A9B199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 554731981A7064D000A9B199 /* main.m */; };
+		55C388271A744E3D006093D1 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C388261A744E3D006093D1 /* Tests.m */; };
 		7A4A9863E08D3831EE55EEFD /* libPods-EARestrictedScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */; };
+		D3A1FCCDC3E35B9B9F825E44 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F27C34DF80A19E18C10B49 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55C388281A744E3D006093D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556603411A6EE13500D05516 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556603481A6EE13500D05516;
+			remoteInfo = EARestrictedScrollView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EARestrictedScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0B9C51854D8FADCA30DE09 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5010D5964908ACD403AA1C2A /* Pods-EARestrictedScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EARestrictedScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-EARestrictedScrollView/Pods-EARestrictedScrollView.release.xcconfig"; sourceTree = "<group>"; };
 		550167851A6FFF7E0099AFB0 /* EARestrictedScrollView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EARestrictedScrollView.podspec; path = ../EARestrictedScrollView.podspec; sourceTree = "<group>"; };
 		550167861A6FFF7E0099AFB0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -32,6 +45,12 @@
 		554731971A7064D000A9B199 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554731981A7064D000A9B199 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		556603491A6EE13500D05516 /* EARestrictedScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EARestrictedScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C388221A744E3C006093D1 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C388251A744E3D006093D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C388261A744E3D006093D1 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		55C3882D1A744E85006093D1 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		72F27C34DF80A19E18C10B49 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E24413885EE5F8B6C1A76EF /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		98B65D76CF28F19C0BEB4161 /* Pods-EARestrictedScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EARestrictedScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EARestrictedScrollView/Pods-EARestrictedScrollView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +60,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4A9863E08D3831EE55EEFD /* libPods-EARestrictedScrollView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C3881F1A744E3C006093D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A1FCCDC3E35B9B9F825E44 /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +129,7 @@
 			children = (
 				550167841A6FFF6C0099AFB0 /* Metadata */,
 				550167831A6FFF450099AFB0 /* Example */,
+				55C388231A744E3D006093D1 /* Tests */,
 				7E6A4A247CE57467BF286DE3 /* Frameworks */,
 				5566034A1A6EE13500D05516 /* Products */,
 				8C10C58924AA09B206C5E825 /* Pods */,
@@ -112,14 +140,34 @@
 			isa = PBXGroup;
 			children = (
 				556603491A6EE13500D05516 /* EARestrictedScrollView.app */,
+				55C388221A744E3C006093D1 /* Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		55C388231A744E3D006093D1 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				55C388261A744E3D006093D1 /* Tests.m */,
+				55C388241A744E3D006093D1 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		55C388241A744E3D006093D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55C3882D1A744E85006093D1 /* Tests-Prefix.pch */,
+				55C388251A744E3D006093D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		7E6A4A247CE57467BF286DE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */,
+				72F27C34DF80A19E18C10B49 /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +177,8 @@
 			children = (
 				98B65D76CF28F19C0BEB4161 /* Pods-EARestrictedScrollView.debug.xcconfig */,
 				5010D5964908ACD403AA1C2A /* Pods-EARestrictedScrollView.release.xcconfig */,
+				1D0B9C51854D8FADCA30DE09 /* Pods-Tests.debug.xcconfig */,
+				7E24413885EE5F8B6C1A76EF /* Pods-Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -155,6 +205,26 @@
 			productReference = 556603491A6EE13500D05516 /* EARestrictedScrollView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		55C388211A744E3C006093D1 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C3882A1A744E3D006093D1 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				9669E27F47FD7F4325333F4E /* Check Pods Manifest.lock */,
+				55C3881E1A744E3C006093D1 /* Sources */,
+				55C3881F1A744E3C006093D1 /* Frameworks */,
+				55C388201A744E3C006093D1 /* Resources */,
+				789CAAC989B5BD4F32273AA3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C388291A744E3D006093D1 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 55C388221A744E3C006093D1 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +236,10 @@
 				TargetAttributes = {
 					556603481A6EE13500D05516 = {
 						CreatedOnToolsVersion = 6.1.1;
+					};
+					55C388211A744E3C006093D1 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 556603481A6EE13500D05516;
 					};
 				};
 			};
@@ -183,6 +257,7 @@
 			projectRoot = "";
 			targets = (
 				556603481A6EE13500D05516 /* EARestrictedScrollView */,
+				55C388211A744E3C006093D1 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,9 +273,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55C388201A744E3C006093D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		789CAAC989B5BD4F32273AA3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9669E27F47FD7F4325333F4E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		AB3D417D987BDDA46633FBB3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,7 +356,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55C3881E1A744E3C006093D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C388271A744E3D006093D1 /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55C388291A744E3D006093D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 556603481A6EE13500D05516 /* EARestrictedScrollView */;
+			targetProxy = 55C388281A744E3D006093D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5566036A1A6EE13500D05516 /* Debug */ = {
@@ -357,6 +485,48 @@
 			};
 			name = Release;
 		};
+		55C3882B1A744E3D006093D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0B9C51854D8FADCA30DE09 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EARestrictedScrollView.app/EARestrictedScrollView";
+			};
+			name = Debug;
+		};
+		55C3882C1A744E3D006093D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E24413885EE5F8B6C1A76EF /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EARestrictedScrollView.app/EARestrictedScrollView";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -374,6 +544,15 @@
 			buildConfigurations = (
 				5566036D1A6EE13500D05516 /* Debug */,
 				5566036E1A6EE13500D05516 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C3882A1A744E3D006093D1 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C3882B1A744E3D006093D1 /* Debug */,
+				55C3882C1A744E3D006093D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
