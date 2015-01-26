@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 
+![DemoGIF](https://raw.githubusercontent.com/ealeksandrov/EARestrictedScrollView/master/Demo.gif)
+
 **`UIScrollView` sublass with ability to restrict scrolling area.**
 
 In plain `UIScrollView` only `contentSize` can be changed, but not the origin of scrolling area. This simple and universal solution allows to restrict scrolling area with `CGRect`.
