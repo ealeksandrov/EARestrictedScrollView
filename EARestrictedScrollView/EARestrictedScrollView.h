@@ -22,16 +22,12 @@
 #pragma GCC diagnostic pop
 
 /**
- *  Should not be used, since it changes parent contentOffset that is being manipulated by subclass.
- *
- *  @see contentOffset
+ *  Should not be used, since it changes parent `contentOffset` that is being manipulated by subclass.
  */
 - (void)setContentOffset:(CGPoint)contentOffset __attribute__((unavailable("use dot notation to access property")));
 
 /**
- *  Should not be used, since it leads to parent contentOffset that is being manipulated by subclass.
- *
- *  @see contentOffset
+ *  Should not be used, since it leads to parent `contentOffset` that is being manipulated by subclass.
  */
 - (CGPoint)contentOffset __attribute__((unavailable("use dot notation to access property")));
 
