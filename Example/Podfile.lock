@@ -1,28 +1,28 @@
 PODS:
-  - EARestrictedScrollView (0.1.0)
-  - Expecta (0.3.1)
-  - Expecta+Snapshots (1.3.1):
-    - Expecta
-    - FBSnapshotTestCase
-  - FBSnapshotTestCase (1.5)
-  - Specta (0.2.1)
+  - EARestrictedScrollView (0.2.0)
+  - Expecta (0.4.2)
+  - Expecta+Snapshots (1.3.2):
+    - Expecta (~> 0.3)
+    - FBSnapshotTestCase (= 1.6)
+  - FBSnapshotTestCase (1.6)
+  - Specta (1.0.2)
 
 DEPENDENCIES:
   - EARestrictedScrollView (from `../`)
   - Expecta
   - Expecta+Snapshots
   - FBSnapshotTestCase
-  - Specta (~> 0.2.1)
+  - Specta
 
 EXTERNAL SOURCES:
   EARestrictedScrollView:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  EARestrictedScrollView: 8e9e6074bebb9cbbc01bc2b9a9e867856d7533d6
-  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
-  FBSnapshotTestCase: e2914fbaabccea1dcc773d6a16b1c24540642488
-  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+  EARestrictedScrollView: f86d61e16c61d3e93c84f8e96e83122a2a3b7631
+  Expecta: 78b4e8b0c8291fa4524d7f74016b6065c2e391ec
+  Expecta+Snapshots: 40c5ec43b43da3bae957f14fed5dc9177d08ec8b
+  FBSnapshotTestCase: 9d5fe43b29ae3a0ed8fc829477971b281038f748
+  Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
 
-COCOAPODS: 0.36.0.beta.1
+COCOAPODS: 0.37.2
