@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35897D88C3B659BE237E39D6 /* Pods_EARestrictedScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D674E3721E44050FB9D553A9 /* Pods_EARestrictedScrollView.framework */; };
 		551F9EB41A72C1BC00DA4169 /* milky-way.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 551F9EB31A72C1BC00DA4169 /* milky-way.jpg */; };
 		554731991A7064D000A9B199 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5547318E1A7064D000A9B199 /* Images.xcassets */; };
 		5547319A1A7064D000A9B199 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5547318F1A7064D000A9B199 /* LaunchScreen.xib */; };
@@ -14,8 +15,7 @@
 		5547319D1A7064D000A9B199 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554731951A7064D000A9B199 /* ViewController.m */; };
 		5547319F1A7064D000A9B199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 554731981A7064D000A9B199 /* main.m */; };
 		55C388271A744E3D006093D1 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C388261A744E3D006093D1 /* Tests.m */; };
-		7A4A9863E08D3831EE55EEFD /* libPods-EARestrictedScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */; };
-		D3A1FCCDC3E35B9B9F825E44 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F27C34DF80A19E18C10B49 /* libPods-Tests.a */; };
+		C9A5FFD1DA9D7CEF298998B1 /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811496044CBB655DB8A6ABE9 /* Pods_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EARestrictedScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D0B9C51854D8FADCA30DE09 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5010D5964908ACD403AA1C2A /* Pods-EARestrictedScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EARestrictedScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-EARestrictedScrollView/Pods-EARestrictedScrollView.release.xcconfig"; sourceTree = "<group>"; };
 		550167851A6FFF7E0099AFB0 /* EARestrictedScrollView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EARestrictedScrollView.podspec; path = ../EARestrictedScrollView.podspec; sourceTree = "<group>"; };
@@ -49,9 +48,10 @@
 		55C388251A744E3D006093D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C388261A744E3D006093D1 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		55C3882D1A744E85006093D1 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		72F27C34DF80A19E18C10B49 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E24413885EE5F8B6C1A76EF /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		811496044CBB655DB8A6ABE9 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B65D76CF28F19C0BEB4161 /* Pods-EARestrictedScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EARestrictedScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EARestrictedScrollView/Pods-EARestrictedScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		D674E3721E44050FB9D553A9 /* Pods_EARestrictedScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EARestrictedScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A4A9863E08D3831EE55EEFD /* libPods-EARestrictedScrollView.a in Frameworks */,
+				35897D88C3B659BE237E39D6 /* Pods_EARestrictedScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A1FCCDC3E35B9B9F825E44 /* libPods-Tests.a in Frameworks */,
+				C9A5FFD1DA9D7CEF298998B1 /* Pods_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +166,8 @@
 		7E6A4A247CE57467BF286DE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				07FF6F438BBB3060175EAA7D /* libPods-EARestrictedScrollView.a */,
-				72F27C34DF80A19E18C10B49 /* libPods-Tests.a */,
+				D674E3721E44050FB9D553A9 /* Pods_EARestrictedScrollView.framework */,
+				811496044CBB655DB8A6ABE9 /* Pods_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +195,7 @@
 				556603461A6EE13500D05516 /* Frameworks */,
 				556603471A6EE13500D05516 /* Resources */,
 				E03906D8339F845936584851 /* Copy Pods Resources */,
+				4616E80335ACBB31BE472F27 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +215,7 @@
 				55C3881F1A744E3C006093D1 /* Frameworks */,
 				55C388201A744E3C006093D1 /* Resources */,
 				789CAAC989B5BD4F32273AA3 /* Copy Pods Resources */,
+				44FE13DC7F4054A3A47C52E1 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,7 +233,7 @@
 		556603411A6EE13500D05516 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = SampleCorp;
 				TargetAttributes = {
 					556603481A6EE13500D05516 = {
@@ -283,6 +285,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		44FE13DC7F4054A3A47C52E1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4616E80335ACBB31BE472F27 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EARestrictedScrollView/Pods-EARestrictedScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		789CAAC989B5BD4F32273AA3 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,7 +426,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -436,6 +470,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -461,6 +496,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting-files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SampleCorp.EARestrictedScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -474,6 +510,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting-files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SampleCorp.EARestrictedScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -484,10 +521,7 @@
 			baseConfigurationReference = 1D0B9C51854D8FADCA30DE09 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -497,6 +531,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SampleCorp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EARestrictedScrollView.app/EARestrictedScrollView";
 			};
@@ -507,15 +542,13 @@
 			baseConfigurationReference = 7E24413885EE5F8B6C1A76EF /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SampleCorp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EARestrictedScrollView.app/EARestrictedScrollView";
 			};

@@ -1,5 +1,4 @@
 #OS noise
-profile
 [Tt]humbs.db
 *.DS_Store
 *~
@@ -26,6 +25,8 @@ Example/*.xcworkspace/*
 #Project files
 [Bb]uild/
 DerivedData/
+
+Carthage
 
 #CocoaPods
 #Pods
