@@ -5,29 +5,34 @@
 
 #import <EARestrictedScrollView/EARestrictedScrollView.h>
 
-SpecBegin(InitialSpecs)
+SpecBegin(Main)
 
+__block UIWindow *window;
 __block EARestrictedScrollView *restrictedScrollView;
 
 beforeEach(^{
-    NSLog(@"Before");
-    
-    restrictedScrollView = [[EARestrictedScrollView alloc] initWithFrame:CGRectMake(0.f, 0.f, 400.f, 500.f)];
+    window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIViewController *vc = [[UIViewController alloc] init];
+    window.rootViewController = vc;
+    restrictedScrollView = [[EARestrictedScrollView alloc] initWithFrame:vc.view.bounds];
+    [vc.view addSubview:restrictedScrollView];
+    [window makeKeyAndVisible];
     
     UIImage *bgImage = [UIImage imageNamed:@"milky-way.jpg"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:bgImage];
     [restrictedScrollView addSubview:imageView];
     [restrictedScrollView setContentSize:imageView.frame.size];
     
+    expect(vc.view).willNot.beNil();
     expect(restrictedScrollView).willNot.beNil();
 });
 
 
 it(@"looks normal on init", ^{
-    expect(restrictedScrollView).to.haveValidSnapshotNamed(@"InitState");
+    expect(window).to.haveValidSnapshotNamed(@"InitState");
 });
 
-it(@"restriction area equals to view.frame", ^{
+it(@"have restriction area = view.frame", ^{
     CGRect restrRect = CGRectMake(300.f, 300.f, restrictedScrollView.bounds.size.width, restrictedScrollView.bounds.size.height);
     
     [restrictedScrollView setRestrictionArea:restrRect];
@@ -35,7 +40,7 @@ it(@"restriction area equals to view.frame", ^{
     expect(restrictedScrollView.contentOffset.x).to.equal(restrRect.origin.x);
     expect(restrictedScrollView.contentOffset.y).to.equal(restrRect.origin.y);
     
-    expect(restrictedScrollView).to.haveValidSnapshotNamed(@"RestrictionAreaEqualsSelf");
+    expect(window).to.haveValidSnapshotNamed(@"RestrictionAreaEqualsSelf");
     
     [restrictedScrollView setRestrictionArea:CGRectZero];
     
@@ -43,7 +48,7 @@ it(@"restriction area equals to view.frame", ^{
     expect(restrictedScrollView.contentOffset.y).to.equal(restrRect.origin.y);
 });
 
-it(@"restriction area is bigger than view.frame", ^{
+it(@"have restriction area bigger than view.frame", ^{
     CGRect restrRect = CGRectMake(400.f, 400.f, restrictedScrollView.bounds.size.width * 1.5, restrictedScrollView.bounds.size.height * 1.5);
     
     [restrictedScrollView setRestrictionArea:restrRect];
@@ -51,18 +56,18 @@ it(@"restriction area is bigger than view.frame", ^{
     expect(restrictedScrollView.contentOffset.x).to.equal(restrRect.origin.x);
     expect(restrictedScrollView.contentOffset.y).to.equal(restrRect.origin.y);
     
-    expect(restrictedScrollView).to.haveValidSnapshotNamed(@"BiggerRestrictionFrameInit");
+    expect(window).to.haveValidSnapshotNamed(@"BiggerRestrictionFrameInit");
 });
 
 
-it(@"restriction area is bigger than view.frame + offset", ^{
+it(@"have restriction area bigger than view.frame + offset", ^{
     CGRect restrRect = CGRectMake(400.f, 400.f, restrictedScrollView.bounds.size.width * 1.5, restrictedScrollView.bounds.size.height * 1.5);
     
     [restrictedScrollView setRestrictionArea:restrRect];
     
-    CGPoint newOffset = CGPointMake(restrRect.origin.x + restrictedScrollView.bounds.size.width * 0.2, restrRect.origin.y + restrictedScrollView.bounds.size.height * 0.2);
+    CGPoint newOffset = CGPointMake(restrRect.origin.x + 50, restrRect.origin.y + 50);
     
-    [restrictedScrollView setContentOffset:newOffset animated:YES];
+    [restrictedScrollView setContentOffset:newOffset animated:NO];
     
     expect(restrictedScrollView.contentOffset.x).to.equal(newOffset.x);
     expect(restrictedScrollView.contentOffset.y).to.equal(newOffset.y);
