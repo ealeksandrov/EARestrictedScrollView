@@ -32,7 +32,7 @@ You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthag
 1. Add EARestrictedScrollView to your project's `Podfile`:
 
 	```ruby
-	pod 'EARestrictedScrollView', '~> 0.2.0'
+	pod 'EARestrictedScrollView', '~> 0.3.0'
 	```
 
 2. Run `pod update` or `pod install` in your project directory.

@@ -44,6 +44,7 @@
 		554731971A7064D000A9B199 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554731981A7064D000A9B199 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		556603491A6EE13500D05516 /* EARestrictedScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EARestrictedScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		559CF60C1C15D3D400258B9C /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		55C388221A744E3C006093D1 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C388251A744E3D006093D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C388261A744E3D006093D1 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 			children = (
 				550167851A6FFF7E0099AFB0 /* EARestrictedScrollView.podspec */,
 				550167871A6FFF7E0099AFB0 /* README.md */,
+				559CF60C1C15D3D400258B9C /* CHANGELOG.md */,
 				550167861A6FFF7E0099AFB0 /* LICENSE */,
 			);
 			name = Metadata;
