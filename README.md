@@ -18,14 +18,25 @@ You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthag
 
 ### Carthage
 
-1. Add EARestrictedScrollView to your project's `Cartfile.private`:
+1. Add EARestrictedScrollView to your project's `Cartfile`:
 
 	```ruby
-	github "ealeksandrov/EARestrictedScrollView" "master"
+	github "ealeksandrov/EARestrictedScrollView"
 	```
 
 2. Run `carthage update` in your project directory.
-3. Drag the appropriate **EARestrictedScrollView.framework** for your platform (located in `Carthage/Build/`) into your application’s Xcode project, and add it to your test target(s).
+3. On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop **EARestrictedScrollView.framework** from the `Carthage/Build/iOS/` folder on disk.
+4. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script with the following contents:
+
+	```shell
+	/usr/local/bin/carthage copy-frameworks
+	```
+	
+	and add the path to the framework under “Input Files”:
+	
+	```shell
+	$(SRCROOT)/Carthage/Build/iOS/EARestrictedScrollView.framework
+	```
 
 ### CocoaPods
 
