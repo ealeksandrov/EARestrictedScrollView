@@ -11,5 +11,5 @@ target 'Tests', :exclusive => true do
     pod 'Specta'
     pod 'Expecta'
     pod 'FBSnapshotTestCase/Core'
-    pod 'Expecta+Snapshots'
+    pod 'Expecta+Snapshots', :git => 'https://github.com/dblock/ios-snapshot-test-case-expecta.git'
 end
