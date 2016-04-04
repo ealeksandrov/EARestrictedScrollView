@@ -1,7 +1,7 @@
 //
 //  Tests.m
 //
-//  Copyright (c) 2015 Evgeny Aleksandrov. License: MIT.
+//  Copyright (c) 2015-2016 Evgeny Aleksandrov. License: MIT.
 
 #import <EARestrictedScrollView/EARestrictedScrollView.h>
 

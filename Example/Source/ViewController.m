@@ -1,7 +1,7 @@
 //
 //  ViewController.m
 //
-//  Copyright (c) 2015 Evgeny Aleksandrov. License: MIT.
+//  Copyright (c) 2015-2016 Evgeny Aleksandrov. License: MIT.
 
 #import "ViewController.h"
 #import <EARestrictedScrollView/EARestrictedScrollView.h>
