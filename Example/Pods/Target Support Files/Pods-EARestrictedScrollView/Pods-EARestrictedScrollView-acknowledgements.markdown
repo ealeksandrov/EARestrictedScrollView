@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## EARestrictedScrollView
 
-Copyright (c) 2015 Evgeny Aleksandrov <evgeny@aleksandrov.ws>
+Copyright (c) 2015-2016 Evgeny Aleksandrov <evgeny@aleksandrov.ws>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

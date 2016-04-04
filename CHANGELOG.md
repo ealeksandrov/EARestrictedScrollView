@@ -1,5 +1,9 @@
 # EARestrictedScrollView
 
+## Version 1.0.0
+
+* Stable obj-c version
+
 ## Version 0.3.0
 
 * Adds Carthage support
