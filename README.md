@@ -64,7 +64,7 @@ You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthag
 
 ##How To Use It
 
-Change scrolling area with new `restrictionArea` property. Reset restriction with passing `CGRectZero` to `restrictionArea`.
+Can be created from code as usual:
 
 ```objective-c
 - (void)viewDidLoad {
@@ -78,7 +78,15 @@ Change scrolling area with new `restrictionArea` property. Reset restriction wit
     [restrictedScrollView addSubview:imageView];
     [restrictedScrollView setContentSize:imageView.frame.size];
 }
+```
 
+Or from Interface Builder:
+
+![IB screenshot](https://raw.githubusercontent.com/ealeksandrov/EARestrictedScrollView/master/ScreenshotIB.png)
+
+Update scrolling area with new `restrictionArea` property. Reset restriction with passing `CGRectZero` to `restrictionArea`.
+
+```
 - (void)changeSwitch:(id)sender {
     UISwitch *areaSwitch = (UISwitch *)sender;
     
