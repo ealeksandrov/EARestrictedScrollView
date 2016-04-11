@@ -10,7 +10,7 @@
 /**
  *  This property leads to containerView.subviews - all subviews except scroll indicators are stored there.
  */
-@property (nonatomic, copy, readonly) NSArray *containedSubviews;
+@property (nonatomic, copy, readonly) NSArray<UIView *> *containedSubviews;
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wproperty-attribute-mismatch"
