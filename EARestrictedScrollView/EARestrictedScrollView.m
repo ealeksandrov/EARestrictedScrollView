@@ -44,7 +44,11 @@
 }
 
 - (void)sendSubviewToBack:(UIView *)view {
-    [self.containerView sendSubviewToBack:view];
+    if(view.superview == self) {
+        [super sendSubviewToBack:view];
+    } else {
+        [self.containerView sendSubviewToBack:view];
+    }
 }
 
 - (UIView *)viewWithTag:(NSInteger)tag {
