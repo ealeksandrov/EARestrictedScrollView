@@ -1,5 +1,5 @@
 PODS:
-  - EARestrictedScrollView (1.0.0)
+  - EARestrictedScrollView (1.1.0)
   - Expecta (1.0.5)
   - Expecta+Snapshots (3.0.0):
     - Expecta (~> 1.0)
@@ -27,7 +27,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/dblock/ios-snapshot-test-case-expecta.git
 
 SPEC CHECKSUMS:
-  EARestrictedScrollView: d7f9f714fdd3ef63e9d86e9c382d7191705abd87
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: c7ae063e5f327b5995d0cbdc3981f189f23dc75f
   FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d

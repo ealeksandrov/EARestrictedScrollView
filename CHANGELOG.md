@@ -1,5 +1,12 @@
 # EARestrictedScrollView
 
+## Version 1.1.0
+
+* Last obj-c release
+* Adds missing check to `sendSubviewToBack:`
+* Adds limitation on `containedSubviews` elements
+* Minor code cleanup
+
 ## Version 1.0.0
 
 * Stable obj-c version
