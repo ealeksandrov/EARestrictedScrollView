@@ -19,5 +19,5 @@
     "git": "https://github.com/ealeksandrov/EARestrictedScrollView.git",
     "tag": "2.0.0"
   },
-  "source_files": "EARestrictedScrollView/*.swift"
+  "source_files": "Source/*.swift"
 }

@@ -114,19 +114,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>06408E3106F33F5F3A137CFE49C61923</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>EARestrictedScrollView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>06922A12FEA6D0A8F7EA8B761BD74E7E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -172,26 +159,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>08818CD978E53A16EFEF9AF8512820AE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E7CDB520E92499D71FB313FE617A1D21</string>
-				<string>53FFB6151C23D41E6F1665DA7F686B3A</string>
-				<string>49021BCDFBAEE6E5F79B1F35D1426448</string>
-				<string>A4CAAB56AA1A140203D20B39F77DB28B</string>
-				<string>4EB8103DEE64CA60E310499CEE76D2CD</string>
-				<string>9DAA7ABE6C99ADFC5FF78098C2883658</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/EARestrictedScrollView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>09F38B3CB7E8D9512328DF890B355BCF</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -221,6 +188,17 @@
 			<string>FBSnapshotTestCase.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>0AE532606DFB0022BEF4D14D62E8726A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>EARestrictedScrollView.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0AE637FA38B5CD5A79A7FC094B84CEDE</key>
 		<dict>
@@ -1022,7 +1000,7 @@
 		<key>23548BF6893AF16FCD43DD68C66D5CE2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>4EB8103DEE64CA60E310499CEE76D2CD</string>
+			<string>E7CBA049D999645146D8BCDA6A7C5233</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1464,21 +1442,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>376A94E6CE478A1809256A6BF63EF1D2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06408E3106F33F5F3A137CFE49C61923</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>EARestrictedScrollView</string>
-			<key>path</key>
-			<string>EARestrictedScrollView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>388CEA1D7F18ACE7D9643DCF404B3082</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1714,7 +1677,7 @@
 		<key>44A42FF2E5A7D0097F80602431FB64E7</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>53FFB6151C23D41E6F1665DA7F686B3A</string>
+			<string>9CE82A01D3B9F31CB67C7D715357DDB4</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1853,19 +1816,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>49021BCDFBAEE6E5F79B1F35D1426448</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>EARestrictedScrollView-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>4934F03F6DFFA5F2F1444AA373291D87</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1965,19 +1915,6 @@
 			<string>772A3FF3D8A39494464ADDC12B7096CF</string>
 			<key>targetProxy</key>
 			<string>8E0ECFB069FC7E5A8F00C81EE29D070B</string>
-		</dict>
-		<key>4EB8103DEE64CA60E310499CEE76D2CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>EARestrictedScrollView-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4EE82D502BE978777A3B28509A68C619</key>
 		<dict>
@@ -2186,25 +2123,25 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>53FFB6151C23D41E6F1665DA7F686B3A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>EARestrictedScrollView.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>54EC1109310747C798344547B265D42C</key>
 		<dict>
 			<key>fileRef</key>
 			<string>BA2B97D9F11DE8A4B088EEBA5996C7DF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>5744B002A00205D3A4E66655E0535D36</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>EARestrictedScrollView-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>577F22B97BD6D66C9F72E2F6B113D34B</key>
 		<dict>
@@ -2337,6 +2274,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>6355C8767F280E1BA3E95749B895A7B1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EARestrictedScrollView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>636B58FAC3180364A85C522A92C73ECB</key>
 		<dict>
 			<key>children</key>
@@ -2422,6 +2372,22 @@
 			<string>BeCloseTo.swift</string>
 			<key>path</key>
 			<string>Sources/Nimble/Matchers/BeCloseTo.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6912A2B4E901E7E65605B1EA967E50F1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C24DA994ABED733C006CE81373C450E7</string>
+				<string>9664276A16A986F00675840B3FD6049C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>EARestrictedScrollView</string>
+			<key>path</key>
+			<string>../..</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3011,7 +2977,7 @@
 		<key>7C0E438B2ECA367874D78F8EFFD34DC9</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>53FFB6151C23D41E6F1665DA7F686B3A</string>
+			<string>9CE82A01D3B9F31CB67C7D715357DDB4</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -3139,7 +3105,7 @@
 		<key>830C5815DCCCA5A872E9D5E70B486D3B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>06408E3106F33F5F3A137CFE49C61923</string>
+			<string>6355C8767F280E1BA3E95749B895A7B1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3758,6 +3724,26 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>9664276A16A986F00675840B3FD6049C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0AE532606DFB0022BEF4D14D62E8726A</string>
+				<string>9CE82A01D3B9F31CB67C7D715357DDB4</string>
+				<string>DC6093EEF4797BF0E0D3BB1F9F68EDED</string>
+				<string>5744B002A00205D3A4E66655E0535D36</string>
+				<string>E7CBA049D999645146D8BCDA6A7C5233</string>
+				<string>D381D92958B8227259FB042FD4D440FE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/EARestrictedScrollView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>96D9D80CFE0EDBAD59860FFD577E473E</key>
 		<dict>
 			<key>fileRef</key>
@@ -3849,16 +3835,16 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>9DAA7ABE6C99ADFC5FF78098C2883658</key>
+		<key>9CE82A01D3B9F31CB67C7D715357DDB4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>EARestrictedScrollView.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3965,19 +3951,6 @@
 			<string>BeEmpty.swift</string>
 			<key>path</key>
 			<string>Sources/Nimble/Matchers/BeEmpty.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A4CAAB56AA1A140203D20B39F77DB28B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>EARestrictedScrollView-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4146,7 +4119,7 @@
 		<key>A8B7BE2D2286AB46B90595D8D20D10C4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>49021BCDFBAEE6E5F79B1F35D1426448</string>
+			<string>DC6093EEF4797BF0E0D3BB1F9F68EDED</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -4746,6 +4719,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C24DA994ABED733C006CE81373C450E7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6355C8767F280E1BA3E95749B895A7B1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Source</string>
+			<key>path</key>
+			<string>Source</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C2783343F7ADCC1F43A6CBA1C0F491CF</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5087,6 +5075,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>D381D92958B8227259FB042FD4D440FE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>D3B53C516FECE8973FCEB5321751FABA</key>
 		<dict>
 			<key>fileRef</key>
@@ -5296,6 +5297,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>DC6093EEF4797BF0E0D3BB1F9F68EDED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>EARestrictedScrollView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>DC6168E9199BC4F2907C93005CA10B85</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5328,22 +5342,6 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>Nimble-Snapshots-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DFF3A6DEA850A18FB73FDD295A487F5B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>376A94E6CE478A1809256A6BF63EF1D2</string>
-				<string>08818CD978E53A16EFEF9AF8512820AE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>EARestrictedScrollView</string>
-			<key>path</key>
-			<string>../..</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -5485,14 +5483,16 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>E7CDB520E92499D71FB313FE617A1D21</key>
+		<key>E7CBA049D999645146D8BCDA6A7C5233</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>EARestrictedScrollView.modulemap</string>
+			<string>EARestrictedScrollView-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -5621,7 +5621,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>DFF3A6DEA850A18FB73FDD295A487F5B</string>
+				<string>6912A2B4E901E7E65605B1EA967E50F1</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>

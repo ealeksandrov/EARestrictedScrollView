@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EARestrictedScrollView: 8dd976837f3e17b7af282d2aa0332f75ec7a52c2
+  EARestrictedScrollView: 240a02ac6e6e4c782a118f2af320b12fb4ee2c9a
   FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
   Nimble: 72bcc3e2f02242e6bfaaf8d9412ca7bfe3d8b417
   Nimble-Snapshots: 2d15a585b816f7d14947ed6e172218f9d0980ea8
