@@ -1,36 +1,33 @@
 PODS:
-  - EARestrictedScrollView (1.1.0)
-  - Expecta (1.0.5)
-  - Expecta+Snapshots (3.0.0):
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0)
-    - Specta (~> 1.0)
+  - EARestrictedScrollView (2.0.0)
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
   - FBSnapshotTestCase/Core (2.1.0)
-  - Specta (1.0.5)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
+    - FBSnapshotTestCase/Core
+  - Nimble (4.0.0)
+  - Nimble-Snapshots (4.0.1):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - Quick (0.9.2)
 
 DEPENDENCIES:
   - EARestrictedScrollView (from `../`)
-  - Expecta
-  - Expecta+Snapshots (from `https://github.com/dblock/ios-snapshot-test-case-expecta.git`)
-  - FBSnapshotTestCase/Core
-  - Specta
+  - FBSnapshotTestCase
+  - Nimble
+  - Nimble-Snapshots
+  - Quick
 
 EXTERNAL SOURCES:
   EARestrictedScrollView:
     :path: "../"
-  Expecta+Snapshots:
-    :git: https://github.com/dblock/ios-snapshot-test-case-expecta.git
-
-CHECKOUT OPTIONS:
-  Expecta+Snapshots:
-    :commit: fedaf506a7e672ea309b759200b593df374aaece
-    :git: https://github.com/dblock/ios-snapshot-test-case-expecta.git
 
 SPEC CHECKSUMS:
-  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  Expecta+Snapshots: c7ae063e5f327b5995d0cbdc3981f189f23dc75f
+  EARestrictedScrollView: 8dd976837f3e17b7af282d2aa0332f75ec7a52c2
   FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  Nimble: 72bcc3e2f02242e6bfaaf8d9412ca7bfe3d8b417
+  Nimble-Snapshots: 2d15a585b816f7d14947ed6e172218f9d0980ea8
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
 
 COCOAPODS: 0.39.0
