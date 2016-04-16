@@ -3,31 +3,70 @@
 //
 //  Copyright (c) 2015-2016 Evgeny Aleksandrov. License: MIT.
 
-import XCTest
-@testable import EARestrictedScrollView
+import Quick
+import Nimble
+import Nimble_Snapshots
+import EARestrictedScrollView
 
-class EARestrictedScrollViewTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+class RestrictedScrollSpec: QuickSpec {
+    override func spec() {
+        describe("RestrictedScroll") {
+            var scrollView: EARestrictedScrollView!
+            
+            func addViewOutline(frame: CGRect) {
+                let restrictionArea = UIView(frame: frame)
+                restrictionArea.layer.cornerRadius = 10
+                restrictionArea.layer.borderColor = UIColor.whiteColor().CGColor
+                restrictionArea.layer.borderWidth = 2
+                
+                scrollView.addSubview(restrictionArea)
+            }
+            
+            beforeEach {
+                scrollView = EARestrictedScrollView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+                
+                let imageView = UIImageView(image: UIImage(named: "milky-way"))
+                scrollView.addSubview(imageView)
+                scrollView.contentSize = imageView.frame.size
+            }
+            
+            it("should look as expected") {
+                expect(scrollView).notTo(beNil())
+                expect(scrollView).to(haveValidSnapshot(named: "InitState"))
+            }
+            
+            it("should move offset to restrictionArea.origin") {
+                let restrictionArea = CGRect(x: 300, y: 300, width: 300, height: 300)
+                scrollView.restrictionArea = restrictionArea
+                addViewOutline(restrictionArea)
+                
+                expect(scrollView.alignedOffset.x).to(beCloseTo(restrictionArea.origin.x))
+                expect(scrollView.alignedOffset.y).to(beCloseTo(restrictionArea.origin.y))
+                
+                expect(scrollView).to(haveValidSnapshot(named: "SmallRestrictionArea"))
+                
+                scrollView.restrictionArea = CGRectZero
+                
+                expect(scrollView.alignedOffset.x).to(beCloseTo(restrictionArea.origin.x))
+                expect(scrollView.alignedOffset.y).to(beCloseTo(restrictionArea.origin.y))
+            }
+            
+            it("should not change offset that is inside restrictionArea") {
+                let contentOffset = CGPoint(x: 400, y: 400)
+                scrollView.contentOffset = contentOffset
+                
+                let restrictionArea = CGRect(x: 300, y: 300, width: 500, height: 500)
+                scrollView.restrictionArea = restrictionArea
+                addViewOutline(restrictionArea)
+                
+                expect(scrollView.alignedOffset.x).to(beCloseTo(contentOffset.x))
+                expect(scrollView.alignedOffset.y).to(beCloseTo(contentOffset.y))
+                
+                scrollView.restrictionArea = CGRectZero
+                
+                expect(scrollView.alignedOffset.x).to(beCloseTo(contentOffset.x))
+                expect(scrollView.alignedOffset.y).to(beCloseTo(contentOffset.y))
+            }
         }
     }
-    
 }
