@@ -7,14 +7,17 @@ import UIKit
 
 public class EARestrictedScrollView: UIScrollView {
     
+    /// Container to hold all subviews of scrollview.
     lazy private var containerView: UIView = self.createContainerView()
     
+    /// Helper func, since direct use of `super` call in `lazy` causes compile error.
     func createContainerView() -> UIView {
         let view = UIView()
         super.addSubview(view)
         return view
     }
     
+    /// Affects `restrictionArea.size` and `containerView.frame.size` when set.
     override public var contentSize: CGSize {
         get {
             return super.contentSize
@@ -25,6 +28,7 @@ public class EARestrictedScrollView: UIScrollView {
         }
     }
     
+    /// Recalculated `contentOffset` in coordinate space of `containerView`.
     public var alignedOffset: CGPoint {
         get {
             let originalOffset = super.contentOffset
@@ -39,6 +43,7 @@ public class EARestrictedScrollView: UIScrollView {
         }
     }
     
+    /// Defines restriction area in coordinate space of `containerView`. Use CGRectZero to reset restriction.
     public var restrictionArea: CGRect = CGRectZero {
         didSet {
             if restrictionArea == CGRectZero {
@@ -53,6 +58,7 @@ public class EARestrictedScrollView: UIScrollView {
         }
     }
     
+    /// Leads to `containerView.subviews` - all subviews except scroll indicators are stored there.
     public var containedSubviews: [UIView] {
         return containerView.subviews
     }
@@ -97,6 +103,7 @@ public class EARestrictedScrollView: UIScrollView {
     
     // MARK: - Private
     
+    /// Checks if a view is a scroll indicator of `UIScrollView`.
     private func isItScrollIndicator(view: UIView) -> Bool {
         return ((showsHorizontalScrollIndicator && view.frame.height == 2.5) || (showsVerticalScrollIndicator && view.frame.width == 2.5)) && view is UIImageView
     }
