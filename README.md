@@ -12,6 +12,8 @@
 
 In plain `UIScrollView` only `contentSize` can be changed, but not the origin of scrolling area. This simple and universal solution allows to restrict scrolling area with `CGRect`.
 
+For objective-c projects you can use [version 1.1.0](https://github.com/ealeksandrov/EARestrictedScrollView/tree/1.1.0).
+
 ## Installation
 
 You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthage/Carthage), [CocoaPods](http://github.com/CocoaPods/CocoaPods) or [completely manually](#setting-up-manually).
@@ -54,30 +56,27 @@ You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthag
 2. Copy and add `EARestrictedScrollView` header and implementation to your project.
 3. You can now use EARestrictedScrollView by adding the following import:
 
-	```objective-c
-	@import EARestrictedScrollView; // If you're using EARestrictedScrollView.framework
-
-	// OR
-
-	#import "EARestrictedScrollView.h"
+	```swift
+	import EARestrictedScrollView
 	```
 
 ##How To Use It
 
 Can be created from code as usual:
 
-```objective-c
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    EARestrictedScrollView *restrictedScrollView = [[EARestrictedScrollView alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:restrictedScrollView];
-    
-    UIImage *bgImage = [UIImage imageNamed:@"milky-way.jpg"];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:bgImage];
-    [restrictedScrollView addSubview:imageView];
-    [restrictedScrollView setContentSize:imageView.frame.size];
-}
+```swift
+override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        restrictedScrollView = EARestrictedScrollView(frame: view.bounds)
+        restrictedScrollView.alwaysBounceVertical = true
+        restrictedScrollView.alwaysBounceHorizontal = true
+        view.addSubview(restrictedScrollView)
+        
+        let imageView = UIImageView(image: UIImage(named: "milky-way"))
+        restrictedScrollView.addSubview(imageView)
+        restrictedScrollView.contentSize = imageView.frame.size
+    }
 ```
 
 Or from Interface Builder:
@@ -86,22 +85,20 @@ Or from Interface Builder:
 
 Update scrolling area with new `restrictionArea` property. Reset restriction with passing `CGRectZero` to `restrictionArea`.
 
-```
-- (void)changeSwitch:(id)sender {
-    UISwitch *areaSwitch = (UISwitch *)sender;
-    
-    if([areaSwitch isOn]){
-        [restrictedScrollView setRestrictionArea:areaSwitch.superview.frame];
-    } else {
-        [restrictedScrollView setRestrictionArea:CGRectZero];
+```swift
+func flipSwitch(sender: UISwitch) {
+        if sender.on {
+            restrictedScrollView.restrictionArea = sender.superview!.frame
+        } else {
+            restrictedScrollView.restrictionArea = CGRectZero
+        }
     }
-}
 ```
 
 To access subviews use `containedSubviews` property. It was added in version 0.2.0 since `subviews` override caused some [troubles with autolayout](https://github.com/ealeksandrov/EAIntroView/issues/100).
 
-```objective-c
-NSArray *subviews = restrictedScrollView.containedSubviews;
+```swift
+let subviews = restrictedScrollView.containedSubviews
 ```
 
 ##Author
