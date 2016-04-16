@@ -1,5 +1,9 @@
 # EARestrictedScrollView
 
+## Version 2.0.0
+
+* Rebuilt in Swift
+
 ## Version 1.1.0
 
 * Last obj-c release
