@@ -3,7 +3,8 @@
 ## Version 2.0.2
 
 * Adds Cocoapods 1.0.1 support for example project
-* Updates test dependenicies
+* Updates project settings for Carthage compatibility
+* Updates test dependencies
 
 ## Version 2.0.1
 
