@@ -1,5 +1,10 @@
 # EARestrictedScrollView
 
+## Version 2.0.2
+
+* Adds Cocoapods 1.0.1 support for example project
+* Updates test dependenicies
+
 ## Version 2.0.1
 
 * Adds Cocoapods 1.0.0 support for example project
