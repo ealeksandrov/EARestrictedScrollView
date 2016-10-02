@@ -1,12 +1,12 @@
 PODS:
   - EARestrictedScrollView (2.0.2)
-  - FBSnapshotTestCase (2.1.2):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
-  - FBSnapshotTestCase/Core (2.1.2)
-  - FBSnapshotTestCase/SwiftSupport (2.1.2):
+  - FBSnapshotTestCase (2.1.3):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.3)
+  - FBSnapshotTestCase/Core (2.1.3)
+  - FBSnapshotTestCase/SwiftSupport (2.1.3):
     - FBSnapshotTestCase/Core
   - Nimble (4.1.0)
-  - Nimble-Snapshots (4.1.0):
+  - Nimble-Snapshots (4.2.0):
     - FBSnapshotTestCase (~> 2.0)
     - Nimble
     - Quick
@@ -15,9 +15,9 @@ PODS:
 DEPENDENCIES:
   - EARestrictedScrollView (from `../`)
   - FBSnapshotTestCase
-  - Nimble
+  - Nimble (= 4.1.0)
   - Nimble-Snapshots
-  - Quick
+  - Quick (= 0.9.3)
 
 EXTERNAL SOURCES:
   EARestrictedScrollView:
@@ -25,11 +25,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   EARestrictedScrollView: 6167fda82c66ef777150b505a0e0203c764a4ca5
-  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  FBSnapshotTestCase: 4607968e0dfa1e2772ec0d0098354f8b870c5753
   Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
-  Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
+  Nimble-Snapshots: 4826e3ee211d2c7af27645e35d68b9e9917882e7
   Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
 
-PODFILE CHECKSUM: 3dd11679517e5b386a90608397610ebdb7a69531
+PODFILE CHECKSUM: 4761f7d12331e7c4ee9497e918617553a6af1b46
 
 COCOAPODS: 1.0.1
