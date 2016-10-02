@@ -1,5 +1,9 @@
 # EARestrictedScrollView
 
+## Version 2.0.3
+
+* Updates example project and tests to Swift 2.3
+
 ## Version 2.0.2
 
 * Adds Cocoapods 1.0.1 support for example project
