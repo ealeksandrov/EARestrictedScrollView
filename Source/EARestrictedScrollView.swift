@@ -5,10 +5,10 @@
 
 import UIKit
 
-public class EARestrictedScrollView: UIScrollView {
+open class EARestrictedScrollView: UIScrollView {
     
     /// Container to hold all subviews of scrollview.
-    lazy private var containerView: UIView = self.createContainerView()
+    lazy fileprivate var containerView: UIView = self.createContainerView()
     
     /// Helper func, since direct use of `super` call in `lazy` causes compile error.
     func createContainerView() -> UIView {
@@ -18,7 +18,7 @@ public class EARestrictedScrollView: UIScrollView {
     }
     
     /// Affects `restrictionArea.size` and `containerView.frame.size` when set.
-    override public var contentSize: CGSize {
+    override open var contentSize: CGSize {
         get {
             return super.contentSize
         }
@@ -29,7 +29,7 @@ public class EARestrictedScrollView: UIScrollView {
     }
     
     /// Recalculated `contentOffset` in coordinate space of `containerView`.
-    public var alignedOffset: CGPoint {
+    open var alignedOffset: CGPoint {
         get {
             let originalOffset = super.contentOffset
             let newOffset = CGPoint(x: originalOffset.x + restrictionArea.origin.x, y: originalOffset.y + restrictionArea.origin.y)
@@ -44,11 +44,11 @@ public class EARestrictedScrollView: UIScrollView {
     }
     
     /// Defines restriction area in coordinate space of `containerView`. Use CGRectZero to reset restriction.
-    public var restrictionArea: CGRect = CGRectZero {
+    open var restrictionArea: CGRect = CGRect.zero {
         didSet {
-            if restrictionArea == CGRectZero {
+            if restrictionArea == CGRect.zero {
                 super.contentOffset = CGPoint(x: super.contentOffset.x - containerView.frame.origin.x, y: super.contentOffset.y - containerView.frame.origin.y)
-                containerView.frame = CGRect(origin: CGPointZero, size: containerView.frame.size)
+                containerView.frame = CGRect(origin: CGPoint.zero, size: containerView.frame.size)
                 super.contentSize = containerView.frame.size
             } else {
                 containerView.frame = CGRect(origin: CGPoint(x: -restrictionArea.origin.x, y: -restrictionArea.origin.y), size: containerView.frame.size)
@@ -59,13 +59,13 @@ public class EARestrictedScrollView: UIScrollView {
     }
     
     /// Leads to `containerView.subviews` - all subviews except scroll indicators are stored there.
-    public var containedSubviews: [UIView] {
+    open var containedSubviews: [UIView] {
         return containerView.subviews
     }
     
     // MARK: - Subviews functions override
     
-    override public func addSubview(view: UIView) {
+    override open func addSubview(_ view: UIView) {
         if subviews.count < 3 && isItScrollIndicator(view) {
             super.addSubview(view)
         } else {
@@ -73,38 +73,38 @@ public class EARestrictedScrollView: UIScrollView {
         }
     }
     
-    override public func insertSubview(view: UIView, aboveSubview siblingSubview: UIView) {
+    override open func insertSubview(_ view: UIView, aboveSubview siblingSubview: UIView) {
         containerView.insertSubview(view, aboveSubview: siblingSubview)
     }
     
-    override public func insertSubview(view: UIView, atIndex index: Int) {
-        containerView.insertSubview(view, atIndex: index)
+    override open func insertSubview(_ view: UIView, at index: Int) {
+        containerView.insertSubview(view, at: index)
     }
     
-    override public func insertSubview(view: UIView, belowSubview siblingSubview: UIView) {
+    override open func insertSubview(_ view: UIView, belowSubview siblingSubview: UIView) {
         containerView.insertSubview(view, belowSubview: siblingSubview)
     }
     
-    override public func bringSubviewToFront(view: UIView) {
+    override open func bringSubview(toFront view: UIView) {
         if view.superview == self {
-            super.bringSubviewToFront(view)
+            super.bringSubview(toFront: view)
         } else {
-            containerView.bringSubviewToFront(view)
+            containerView.bringSubview(toFront: view)
         }
     }
     
-    override public func sendSubviewToBack(view: UIView) {
+    override open func sendSubview(toBack view: UIView) {
         if view.superview == self {
-            super.sendSubviewToBack(view)
+            super.sendSubview(toBack: view)
         } else {
-            containerView.sendSubviewToBack(view)
+            containerView.sendSubview(toBack: view)
         }
     }
     
     // MARK: - Private
     
     /// Checks if a view is a scroll indicator of `UIScrollView`.
-    private func isItScrollIndicator(view: UIView) -> Bool {
+    fileprivate func isItScrollIndicator(_ view: UIView) -> Bool {
         return ((showsHorizontalScrollIndicator && view.frame.height == 2.5) || (showsVerticalScrollIndicator && view.frame.width == 2.5)) && view is UIImageView
     }
 }

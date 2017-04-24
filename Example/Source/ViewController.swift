@@ -26,25 +26,25 @@ class ViewController: UIViewController {
         addViewWithControls(CGRect(x: 50 + view.frame.width, y: 50, width: view.frame.width * 1.5, height: view.frame.height * 1.5))
     }
     
-    func addViewWithControls(frame: CGRect) {
+    func addViewWithControls(_ frame: CGRect) {
         let restrictionArea = UIView(frame: frame)
         restrictionArea.layer.cornerRadius = 10
-        restrictionArea.layer.borderColor = UIColor.whiteColor().CGColor
+        restrictionArea.layer.borderColor = UIColor.white.cgColor
         restrictionArea.layer.borderWidth = 2
         
-        let areaSwitch = UISwitch(frame: CGRectZero)
-        areaSwitch.frame = CGRect(origin: CGPoint(x: (restrictionArea.frame.width - areaSwitch.frame.width)/2, y: (restrictionArea.frame.height - areaSwitch.frame.height)/2), size: CGSizeZero)
-        areaSwitch.addTarget(self, action: #selector(ViewController.flipSwitch(_:)), forControlEvents: .ValueChanged)
+        let areaSwitch = UISwitch(frame: CGRect.zero)
+        areaSwitch.frame = CGRect(origin: CGPoint(x: (restrictionArea.frame.width - areaSwitch.frame.width)/2, y: (restrictionArea.frame.height - areaSwitch.frame.height)/2), size: CGSize.zero)
+        areaSwitch.addTarget(self, action: #selector(ViewController.flipSwitch(_:)), for: .valueChanged)
         
         restrictionArea.addSubview(areaSwitch)
         restrictedScrollView.addSubview(restrictionArea)
     }
     
-    func flipSwitch(sender: UISwitch) {
-        if sender.on {
+    func flipSwitch(_ sender: UISwitch) {
+        if sender.isOn {
             restrictedScrollView.restrictionArea = sender.superview!.frame
         } else {
-            restrictedScrollView.restrictionArea = CGRectZero
+            restrictedScrollView.restrictionArea = CGRect.zero
         }
     }
 }

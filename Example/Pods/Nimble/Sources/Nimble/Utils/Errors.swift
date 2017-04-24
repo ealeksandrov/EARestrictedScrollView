@@ -2,21 +2,17 @@ import Foundation
 
 // Generic
 
-internal func setFailureMessageForError<T: ErrorType>(
-    failureMessage: FailureMessage,
+internal func setFailureMessageForError<T: Error>(
+    _ failureMessage: FailureMessage,
     postfixMessageVerb: String = "throw",
-    actualError: ErrorType?,
+    actualError: Error?,
     error: T? = nil,
     errorType: T.Type? = nil,
     closure: ((T) -> Void)? = nil) {
     failureMessage.postfixMessage = "\(postfixMessageVerb) error"
 
     if let error = error {
-        if let error = error as? CustomDebugStringConvertible {
-            failureMessage.postfixMessage += " <\(error.debugDescription)>"
-        } else {
-            failureMessage.postfixMessage += " <\(error)>"
-        }
+        failureMessage.postfixMessage += " <\(error)>"
     } else if errorType != nil || closure != nil {
         failureMessage.postfixMessage += " from type <\(T.self)>"
     }
@@ -34,24 +30,25 @@ internal func setFailureMessageForError<T: ErrorType>(
     }
 }
 
-internal func errorMatchesExpectedError<T: ErrorType>(
-    actualError: ErrorType,
+internal func errorMatchesExpectedError<T: Error>(
+    _ actualError: Error,
     expectedError: T) -> Bool {
     return actualError._domain == expectedError._domain
         && actualError._code   == expectedError._code
 }
 
-internal func errorMatchesExpectedError<T: ErrorType where T: Equatable>(
-    actualError: ErrorType,
-    expectedError: T) -> Bool {
+internal func errorMatchesExpectedError<T: Error>(
+    _ actualError: Error,
+    expectedError: T) -> Bool
+    where T: Equatable {
     if let actualError = actualError as? T {
         return actualError == expectedError
     }
     return false
 }
 
-internal func errorMatchesNonNilFieldsOrClosure<T: ErrorType>(
-    actualError: ErrorType?,
+internal func errorMatchesNonNilFieldsOrClosure<T: Error>(
+    _ actualError: Error?,
     error: T? = nil,
     errorType: T.Type? = nil,
     closure: ((T) -> Void)? = nil) -> Bool {
@@ -75,14 +72,21 @@ internal func errorMatchesNonNilFieldsOrClosure<T: ErrorType>(
                     matches = false
                 }
             }
-        } else if errorType != nil && closure != nil {
-            // The closure expects another ErrorType as argument, so this
+        } else if errorType != nil {
+            matches = (actualError is T)
+            // The closure expects another ErrorProtocol as argument, so this
             // is _supposed_ to fail, so that it becomes more obvious.
-            let assertions = gatherExpectations {
-                expect(actualError is T).to(equal(true))
+            if let closure = closure {
+                let assertions = gatherExpectations {
+                    if let actual = actualError as? T {
+                        closure(actual)
+                    }
+                }
+                let messages = assertions.map { $0.message }
+                if messages.count > 0 {
+                    matches = false
+                }
             }
-            precondition(assertions.map { $0.message }.count > 0)
-            matches = false
         }
     }
 
@@ -92,9 +96,9 @@ internal func errorMatchesNonNilFieldsOrClosure<T: ErrorType>(
 // Non-generic
 
 internal func setFailureMessageForError(
-    failureMessage: FailureMessage,
-    actualError: ErrorType?,
-    closure: ((ErrorType) -> Void)?) {
+    _ failureMessage: FailureMessage,
+    actualError: Error?,
+    closure: ((Error) -> Void)?) {
     failureMessage.postfixMessage = "throw error"
 
     if let _ = closure {
@@ -111,8 +115,8 @@ internal func setFailureMessageForError(
 }
 
 internal func errorMatchesNonNilFieldsOrClosure(
-    actualError: ErrorType?,
-    closure: ((ErrorType) -> Void)?) -> Bool {
+    _ actualError: Error?,
+    closure: ((Error) -> Void)?) -> Bool {
     var matches = false
 
     if let actualError = actualError {
