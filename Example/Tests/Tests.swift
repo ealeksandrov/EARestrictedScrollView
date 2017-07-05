@@ -13,10 +13,10 @@ class RestrictedScrollSpec: QuickSpec {
         describe("RestrictedScroll") {
             var scrollView: EARestrictedScrollView!
             
-            func addViewOutline(frame: CGRect) {
+            func addViewOutline(_ frame: CGRect) {
                 let restrictionArea = UIView(frame: frame)
                 restrictionArea.layer.cornerRadius = 10
-                restrictionArea.layer.borderColor = UIColor.whiteColor().CGColor
+                restrictionArea.layer.borderColor = UIColor.white.cgColor
                 restrictionArea.layer.borderWidth = 2
                 
                 scrollView.addSubview(restrictionArea)
@@ -45,7 +45,7 @@ class RestrictedScrollSpec: QuickSpec {
                 
                 expect(scrollView).to(haveValidSnapshot(named: "SmallRestrictionArea"))
                 
-                scrollView.restrictionArea = CGRectZero
+                scrollView.restrictionArea = CGRect.zero
                 
                 expect(scrollView.alignedOffset.x).to(beCloseTo(restrictionArea.origin.x))
                 expect(scrollView.alignedOffset.y).to(beCloseTo(restrictionArea.origin.y))
@@ -62,7 +62,7 @@ class RestrictedScrollSpec: QuickSpec {
                 expect(scrollView.alignedOffset.x).to(beCloseTo(contentOffset.x))
                 expect(scrollView.alignedOffset.y).to(beCloseTo(contentOffset.y))
                 
-                scrollView.restrictionArea = CGRectZero
+                scrollView.restrictionArea = CGRect.zero
                 
                 expect(scrollView.alignedOffset.x).to(beCloseTo(contentOffset.x))
                 expect(scrollView.alignedOffset.y).to(beCloseTo(contentOffset.y))
