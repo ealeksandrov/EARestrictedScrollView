@@ -30,5 +30,5 @@ Carthage
 Example/Pods/*.xcodeproj/*
 !Example/Pods/*.xcodeproj/project.pbxproj
 
-!xcshareddata
+!**/xcshareddata
 *.xccheckout
