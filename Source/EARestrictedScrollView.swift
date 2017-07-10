@@ -1,7 +1,7 @@
 //
 //  EARestrictedScrollView.swift
 //
-//  Copyright (c) 2015-2016 Evgeny Aleksandrov. License: MIT.
+//  Copyright (c) 2015-2017 Evgeny Aleksandrov. License: MIT.
 
 import UIKit
 
