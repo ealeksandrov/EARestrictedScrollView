@@ -1,4 +1,4 @@
-#EARestrictedScrollView
+# EARestrictedScrollView
 
 [![CI Status](http://img.shields.io/travis/ealeksandrov/EARestrictedScrollView.svg?style=flat)](https://travis-ci.org/ealeksandrov/EARestrictedScrollView)
 [![Version](https://img.shields.io/cocoapods/v/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
@@ -12,7 +12,7 @@
 
 In plain `UIScrollView` only `contentSize` can be changed, but not the origin of scrolling area. This simple and universal solution allows to restrict scrolling area with `CGRect`.
 
-For objective-c projects you can use [version 1.1.0](https://github.com/ealeksandrov/EARestrictedScrollView/tree/1.1.0).
+For objective-c projects you can use [version 1.1.0](https://github.com/ealeksandrov/EARestrictedScrollView/releases/tag/1.1.0).
 
 ## Installation
 
@@ -60,7 +60,7 @@ You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthag
 	import EARestrictedScrollView
 	```
 
-##How To Use It
+## How To Use It
 
 Can be created from code as usual:
 
@@ -101,7 +101,7 @@ To access subviews use `containedSubviews` property. It was added in version 0.2
 let subviews = restrictedScrollView.containedSubviews
 ```
 
-##Author
+## Author
 
 Created and maintained by Evgeny Aleksandrov ([@EAleksandrov](https://twitter.com/EAleksandrov)).
 
