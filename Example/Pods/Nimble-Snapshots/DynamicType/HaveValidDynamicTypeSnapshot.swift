@@ -1,7 +1,7 @@
 import Nimble
 import UIKit
 
-func allContentSizeCategories() -> [UIContentSizeCategory] {
+public func allContentSizeCategories() -> [UIContentSizeCategory] {
     return [
         .extraSmall, .small, .medium,
         .large, .extraLarge, .extraExtraLarge,
@@ -33,7 +33,9 @@ func combinePredicates<T>(_ predicates: [Predicate<T>], ignoreFailures: Bool = f
     }
 }
 
-public func haveValidDynamicTypeSnapshot(named name: String? = nil, usesDrawRect: Bool = false,
+public func haveValidDynamicTypeSnapshot(named name: String? = nil,
+                                         identifier: String? = nil,
+                                         usesDrawRect: Bool = false,
                                          tolerance: CGFloat? = nil,
                                          sizes: [UIContentSizeCategory] = allContentSizeCategories(),
                                          isDeviceAgnostic: Bool = false) -> Predicate<Snapshotable> {
@@ -49,10 +51,13 @@ public func haveValidDynamicTypeSnapshot(named name: String? = nil, usesDrawRect
 
             let predicate: Predicate<Snapshotable>
             if isDeviceAgnostic {
-                predicate = haveValidDeviceAgnosticSnapshot(named: nameWithCategory,
+                predicate = haveValidDeviceAgnosticSnapshot(named: nameWithCategory, identifier: identifier,
                                                           usesDrawRect: usesDrawRect, tolerance: tolerance)
             } else {
-                predicate = haveValidSnapshot(named: nameWithCategory, usesDrawRect: usesDrawRect, tolerance: tolerance)
+                predicate = haveValidSnapshot(named: nameWithCategory,
+                                              identifier: identifier,
+                                              usesDrawRect: usesDrawRect,
+                                              tolerance: tolerance)
             }
 
             return try predicate.matches(actualExpression, failureMessage: failureMessage)
@@ -64,7 +69,7 @@ public func haveValidDynamicTypeSnapshot(named name: String? = nil, usesDrawRect
     }
 }
 
-public func recordDynamicTypeSnapshot(named name: String? = nil, usesDrawRect: Bool = false,
+public func recordDynamicTypeSnapshot(named name: String? = nil, identifier: String? = nil, usesDrawRect: Bool = false,
                                       sizes: [UIContentSizeCategory] = allContentSizeCategories(),
                                       isDeviceAgnostic: Bool = false) -> Predicate<Snapshotable> {
     let mock = NBSMockedApplication()
@@ -79,9 +84,11 @@ public func recordDynamicTypeSnapshot(named name: String? = nil, usesDrawRect: B
 
             let predicate: Predicate<Snapshotable>
             if isDeviceAgnostic {
-                predicate = recordDeviceAgnosticSnapshot(named: nameWithCategory, usesDrawRect: usesDrawRect)
+                predicate = recordDeviceAgnosticSnapshot(named: nameWithCategory,
+                                                         identifier: identifier,
+                                                         usesDrawRect: usesDrawRect)
             } else {
-                predicate = recordSnapshot(named: nameWithCategory, usesDrawRect: usesDrawRect)
+                predicate = recordSnapshot(named: nameWithCategory, identifier: identifier, usesDrawRect: usesDrawRect)
             }
 
             return try predicate.matches(actualExpression, failureMessage: failureMessage)
@@ -111,7 +118,12 @@ private func updateTraitCollection(on element: Snapshotable) {
         if let view = environment as? UIView {
             view.subviews.forEach(updateTraitCollection(on:))
         } else if let vc = environment as? UIViewController {
+            #if swift(>=4.2)
+            vc.children.forEach(updateTraitCollection(on:))
+            #else
             vc.childViewControllers.forEach(updateTraitCollection(on:))
+            #endif
+
             if vc.isViewLoaded {
                 updateTraitCollection(on: vc.view)
             }
