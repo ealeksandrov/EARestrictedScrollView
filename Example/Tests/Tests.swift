@@ -32,7 +32,7 @@ class RestrictedScrollSpec: QuickSpec {
             
             it("should look as expected") {
                 expect(scrollView).notTo(beNil())
-                expect(scrollView).to(haveValidSnapshot(named: "InitState"))
+                expect(scrollView).to(haveValidDeviceAgnosticSnapshot(named: "InitState"))
             }
             
             it("should move offset to restrictionArea.origin") {
@@ -43,7 +43,7 @@ class RestrictedScrollSpec: QuickSpec {
                 expect(scrollView.alignedOffset.x).to(beCloseTo(restrictionArea.origin.x))
                 expect(scrollView.alignedOffset.y).to(beCloseTo(restrictionArea.origin.y))
                 
-                expect(scrollView).to(haveValidSnapshot(named: "SmallRestrictionArea"))
+                expect(scrollView).to(haveValidDeviceAgnosticSnapshot(named: "SmallRestrictionArea"))
                 
                 scrollView.restrictionArea = CGRect.zero
                 
