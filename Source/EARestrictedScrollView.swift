@@ -85,19 +85,19 @@ open class EARestrictedScrollView: UIScrollView {
         containerView.insertSubview(view, belowSubview: siblingSubview)
     }
     
-    override open func bringSubview(toFront view: UIView) {
+    override open func bringSubviewToFront(_ view: UIView) {
         if view.superview == self {
-            super.bringSubview(toFront: view)
+            super.bringSubviewToFront(view)
         } else {
-            containerView.bringSubview(toFront: view)
+            containerView.bringSubviewToFront(view)
         }
     }
     
-    override open func sendSubview(toBack view: UIView) {
+    override open func sendSubviewToBack(_ view: UIView) {
         if view.superview == self {
-            super.sendSubview(toBack: view)
+            super.sendSubviewToBack(view)
         } else {
-            containerView.sendSubview(toBack: view)
+            containerView.sendSubviewToBack(view)
         }
     }
     

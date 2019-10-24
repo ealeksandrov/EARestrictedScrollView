@@ -34,13 +34,13 @@ class ViewController: UIViewController {
         
         let areaSwitch = UISwitch(frame: CGRect.zero)
         areaSwitch.frame = CGRect(origin: CGPoint(x: (restrictionArea.frame.width - areaSwitch.frame.width)/2, y: (restrictionArea.frame.height - areaSwitch.frame.height)/2), size: CGSize.zero)
-        areaSwitch.addTarget(self, action: #selector(ViewController.flipSwitch(_:)), for: .valueChanged)
+        areaSwitch.addTarget(self, action: #selector(flipSwitch(_:)), for: .valueChanged)
         
         restrictionArea.addSubview(areaSwitch)
         restrictedScrollView.addSubview(restrictionArea)
     }
     
-    func flipSwitch(_ sender: UISwitch) {
+    @objc func flipSwitch(_ sender: UISwitch) {
         if sender.isOn {
             restrictedScrollView.restrictionArea = sender.superview!.frame
         } else {
