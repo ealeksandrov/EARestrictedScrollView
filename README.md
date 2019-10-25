@@ -1,6 +1,6 @@
 # EARestrictedScrollView
 
-[![CI Status](http://img.shields.io/travis/ealeksandrov/EARestrictedScrollView.svg?style=flat)](https://travis-ci.org/ealeksandrov/EARestrictedScrollView)
+[![Build Status](https://travis-ci.com/ealeksandrov/EARestrictedScrollView.svg?branch=master)](https://travis-ci.com/ealeksandrov/EARestrictedScrollView)
 [![Version](https://img.shields.io/cocoapods/v/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
@@ -103,8 +103,8 @@ let subviews = restrictedScrollView.containedSubviews
 
 ## Author
 
-Created and maintained by Evgeny Aleksandrov ([@EAleksandrov](https://twitter.com/EAleksandrov)).
+Created and maintained by Evgeny Aleksandrov ([@ealeksandrov](https://twitter.com/ealeksandrov)).
 
 ## License
 
-`EARestrictedScrollView` is available under the MIT license. See the LICENSE file for more info.
+`EARestrictedScrollView` is available under the MIT license. See the [LICENSE.md](LICENSE.md) file for more info.
