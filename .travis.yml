@@ -14,7 +14,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: LnOWVVBpgByOSqHV8jTmtEP1M1WFC/79O9YLnnR1DzaiFGseM48ocXGTBKAn1t6CeGYO7NzjbpolWjYOs2T4IOFNLrfMLX7eeXE1nBfXkcrV2iAe8kN8ga9UvqI1MNWu8ryDQGoiQ2KY69eGxubm9CrKeKP/2AFNxichdo8U5jI=
+    secure: OJq+c3JV3OtZNGU1BTNULfyWg2aQASMxSaxnjPAanOpOIsDTZLkn4/m/Ty2L2n0C4OamGxyeM7TS50u+ewTQHZAp36n5QjrP4Tyjc/bn3IgfJQJ1X20t4KNjWDSvfwvPYxD9IKFPn/CbQ+kKO6PEI/ogH4/Rx/8XGiuivPsuEU0=
   file: EARestrictedScrollView.framework.zip
   skip_cleanup: true
   on:
