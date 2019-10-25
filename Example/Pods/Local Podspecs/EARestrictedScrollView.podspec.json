@@ -1,12 +1,12 @@
 {
   "name": "EARestrictedScrollView",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "summary": "UIScrollView sublass with ability to restrict or limit scrolling area.",
   "screenshots": "https://raw.githubusercontent.com/ealeksandrov/EARestrictedScrollView/master/Screenshot01.png",
   "homepage": "https://github.com/ealeksandrov/EARestrictedScrollView",
   "license": {
     "type": "MIT",
-    "file": "LICENSE"
+    "file": "LICENSE.md"
   },
   "authors": {
     "Evgeny Aleksandrov": "evgeny@aleksandrov.ws"
@@ -17,7 +17,7 @@
   },
   "source": {
     "git": "https://github.com/ealeksandrov/EARestrictedScrollView.git",
-    "tag": "2.0.4"
+    "tag": "2.0.5"
   },
   "source_files": "Source/*.swift"
 }

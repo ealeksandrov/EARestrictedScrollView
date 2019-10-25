@@ -1,5 +1,5 @@
 PODS:
-  - EARestrictedScrollView (2.0.4)
+  - EARestrictedScrollView (2.0.5)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EARestrictedScrollView: cbaa853ca38aa5dc886d9313b46a1323f7cb62af
+  EARestrictedScrollView: 96c05a0a87f0eeba843ecc44b8fb74293d83f27a
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
