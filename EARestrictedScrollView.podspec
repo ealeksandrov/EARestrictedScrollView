@@ -1,11 +1,12 @@
 Pod::Spec.new do |s|
 
   s.name         = 'EARestrictedScrollView'
-  s.version      = '2.0.4'
+  s.version      = '2.0.5'
+  s.swift_version = '5.0'
   s.summary      = 'UIScrollView sublass with ability to restrict or limit scrolling area.'
   s.screenshot   = 'https://raw.githubusercontent.com/ealeksandrov/EARestrictedScrollView/master/Screenshot01.png'
   s.homepage     = 'https://github.com/ealeksandrov/EARestrictedScrollView'
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author       = { 'Evgeny Aleksandrov' => 'evgeny@aleksandrov.ws' }
   s.social_media_url = 'https://twitter.com/ealeksandrov'
 

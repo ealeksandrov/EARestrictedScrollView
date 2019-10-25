@@ -1,5 +1,9 @@
 # EARestrictedScrollView
 
+## Version 2.0.5
+
+* Updates library to Swift 5
+
 ## Version 2.0.4
 
 * Updates library to Swift 3
