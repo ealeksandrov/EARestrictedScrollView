@@ -2,6 +2,7 @@
 
 [![CI Status](https://github.com/ealeksandrov/EARestrictedScrollView/workflows/CI/badge.svg?branch=master)](https://github.com/ealeksandrov/EARestrictedScrollView/actions)
 [![Version](https://img.shields.io/cocoapods/v/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
+[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
@@ -45,7 +46,7 @@ You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthag
 1. Add EARestrictedScrollView to your project's `Podfile`:
 
 	```ruby
-	pod 'EARestrictedScrollView', '~> 2.0.0'
+	pod 'EARestrictedScrollView', '~> 2.1.0'
 	```
 
 2. Run `pod update` or `pod install` in your project directory.
@@ -55,7 +56,7 @@ You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthag
 1. Add EARestrictedScrollView to your project’s ‘Swift Packages’ section or `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/ealeksandrov/EARestrictedScrollView.git", from: "2.0.0")
+.package(url: "https://github.com/ealeksandrov/EARestrictedScrollView.git", from: "2.1.0")
 ```
 
 ### Setting Up Manually

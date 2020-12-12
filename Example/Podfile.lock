@@ -1,5 +1,5 @@
 PODS:
-  - EARestrictedScrollView (2.0.5)
+  - EARestrictedScrollView (2.1.0)
   - iOSSnapshotTestCase (5.0.2):
     - iOSSnapshotTestCase/SwiftSupport (= 5.0.2)
   - iOSSnapshotTestCase/Core (5.0.2)
@@ -19,9 +19,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EARestrictedScrollView: 652921dc5d6cba63d4d44788a3402ad9b115915e
+  EARestrictedScrollView: 0377202abcf59f0c7361ff26ac66baf7d0723317
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
 
-PODFILE CHECKSUM: d22c88137f79d62475ba574349f58aa9330f5373
+PODFILE CHECKSUM: 58383cea10cca756a6fd47a57a75452437e14f99
 
 COCOAPODS: 1.10.0
