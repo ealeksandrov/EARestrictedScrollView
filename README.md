@@ -16,7 +16,7 @@ For objective-c projects you can use [version 1.1.0](https://github.com/ealeksan
 
 ## Installation
 
-You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthage/Carthage), [CocoaPods](http://github.com/CocoaPods/CocoaPods) or [completely manually](#setting-up-manually).
+You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthage/Carthage), [CocoaPods](http://github.com/CocoaPods/CocoaPods), [Swift Package Manager](https://github.com/apple/swift-package-manager) or [completely manually](#setting-up-manually).
 
 ### Carthage
 
@@ -49,6 +49,14 @@ You can setup EARestrictedScrollView using [Carthage](https://github.com/Carthag
 	```
 
 2. Run `pod update` or `pod install` in your project directory.
+
+### Swift Package Manager
+
+1. Add EARestrictedScrollView to your project’s ‘Swift Packages’ section or `Package.swift`:
+
+```swift
+.package(url: "https://github.com/ealeksandrov/EARestrictedScrollView.git", from: "2.0.0")
+```
 
 ### Setting Up Manually
 
