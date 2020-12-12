@@ -10,10 +10,10 @@
 		42DFC379A950FC16CE16522D /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6064EE543E76500FB4086979 /* Pods_Tests.framework */; };
 		45A1557062E357A579E3DB9D /* Pods_EARestrictedScrollView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DB1A724CE904B6533DCEDB /* Pods_EARestrictedScrollView_Example.framework */; };
 		552310D01CC26E7600CDF67A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552310CE1CC26E7600CDF67A /* LaunchScreen.storyboard */; };
-		555932471CC24E2500E59D5B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555932451CC24E2500E59D5B /* Tests.swift */; };
 		555932521CC24E6D00E59D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5559324A1CC24E6D00E59D5B /* Assets.xcassets */; };
 		555932551CC24E6D00E59D5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555932501CC24E6D00E59D5B /* AppDelegate.swift */; };
 		555932561CC24E6D00E59D5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555932511CC24E6D00E59D5B /* ViewController.swift */; };
+		AE0F191D2584D53B003AE865 /* EARestrictedScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F191C2584D53B003AE865 /* EARestrictedScrollViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,18 +32,18 @@
 		5559320B1CC24D1200E59D5B /* EARestrictedScrollView-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EARestrictedScrollView-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5559321F1CC24D1300E59D5B /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555932381CC24E0300E59D5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		555932451CC24E2500E59D5B /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		555932461CC24E2500E59D5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5559324A1CC24E6D00E59D5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		555932501CC24E6D00E59D5B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		555932511CC24E6D00E59D5B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		555932581CC24EF500E59D5B /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		555932591CC24EF500E59D5B /* EARestrictedScrollView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = EARestrictedScrollView.podspec; path = ../EARestrictedScrollView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5559325A1CC24EF500E59D5B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5559325B1CC24EF500E59D5B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		57DB1A724CE904B6533DCEDB /* Pods_EARestrictedScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EARestrictedScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6064EE543E76500FB4086979 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20310D54D57CDA78EA33197 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AE0F19192584CD96003AE865 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
+		AE0F191C2584D53B003AE865 /* EARestrictedScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EARestrictedScrollViewTests.swift; sourceTree = "<group>"; };
 		D7E34389C9B0159C3DBD42B3 /* Pods-EARestrictedScrollView-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EARestrictedScrollView-Example.debug.xcconfig"; path = "Target Support Files/Pods-EARestrictedScrollView-Example/Pods-EARestrictedScrollView-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FF1CE292523EC9BFF4F23481 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,8 +109,8 @@
 		555932441CC24E2500E59D5B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				555932451CC24E2500E59D5B /* Tests.swift */,
 				555932461CC24E2500E59D5B /* Info.plist */,
+				AE0F191C2584D53B003AE865 /* EARestrictedScrollViewTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 				555932591CC24EF500E59D5B /* EARestrictedScrollView.podspec */,
 				555932581CC24EF500E59D5B /* CHANGELOG.md */,
 				5559325B1CC24EF500E59D5B /* README.md */,
-				5559325A1CC24EF500E59D5B /* LICENSE */,
+				AE0F19192584CD96003AE865 /* LICENSE.md */,
 			);
 			name = Metadata;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Evgeny Aleksandrov";
 				TargetAttributes = {
 					5559320A1CC24D1200E59D5B = {
@@ -337,19 +337,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -372,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555932471CC24E2500E59D5B /* Tests.swift in Sources */,
+				AE0F191D2584D53B003AE865 /* EARestrictedScrollViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +414,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -477,6 +471,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
