@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 
-![DemoGIF](https://raw.githubusercontent.com/ealeksandrov/EARestrictedScrollView/master/Demo.gif)
+![DemoGIF](https://raw.githubusercontent.com/ealeksandrov/EARestrictedScrollView/master/Screenshots/Demo.gif)
 
 **`UIScrollView` sublass with ability to restrict scrolling area.**
 
@@ -89,7 +89,7 @@ override func viewDidLoad() {
 
 Or from Interface Builder:
 
-![IB screenshot](https://raw.githubusercontent.com/ealeksandrov/EARestrictedScrollView/master/ScreenshotIB.png)
+![IB screenshot](https://raw.githubusercontent.com/ealeksandrov/EARestrictedScrollView/master/Screenshots/ScreenshotIB.png)
 
 Update scrolling area with new `restrictionArea` property. Reset restriction with passing `CGRectZero` to `restrictionArea`.
 
