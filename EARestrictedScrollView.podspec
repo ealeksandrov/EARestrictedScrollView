@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { 'Evgeny Aleksandrov' => 'evgeny@aleksandrov.ws' }
   s.social_media_url = 'https://twitter.com/ealeksandrov'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.source       = { :git => 'https://github.com/ealeksandrov/EARestrictedScrollView.git', :tag => s.version.to_s }
   s.source_files = 'Source/*.swift'
 
