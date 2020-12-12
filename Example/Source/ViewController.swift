@@ -16,14 +16,19 @@ class ViewController: UIViewController {
         restrictedScrollView = EARestrictedScrollView(frame: view.bounds)
         restrictedScrollView.alwaysBounceVertical = true
         restrictedScrollView.alwaysBounceHorizontal = true
+        if #available(iOS 11.0, *) {
+            restrictedScrollView.contentInsetAdjustmentBehavior = .never
+        }
         view.addSubview(restrictedScrollView)
         
         let imageView = UIImageView(image: UIImage(named: "milky-way"))
         restrictedScrollView.addSubview(imageView)
         restrictedScrollView.contentSize = imageView.frame.size
+
+        let restrictionAreaSize = view.frame.size
         
-        addViewWithControls(CGRect(x: 20, y: 50, width: view.frame.width, height: view.frame.height))
-        addViewWithControls(CGRect(x: 50 + view.frame.width, y: 50, width: view.frame.width * 1.5, height: view.frame.height * 1.5))
+        addViewWithControls(CGRect(x: 20, y: 50, width: restrictionAreaSize.width, height: restrictionAreaSize.height))
+        addViewWithControls(CGRect(x: 50 + view.frame.width, y: 50, width: restrictionAreaSize.width * 1.5, height: restrictionAreaSize.height * 1.5))
     }
     
     func addViewWithControls(_ frame: CGRect) {
