@@ -1,6 +1,6 @@
 # EARestrictedScrollView
 
-[![Build Status](https://travis-ci.com/ealeksandrov/EARestrictedScrollView.svg?branch=master)](https://travis-ci.com/ealeksandrov/EARestrictedScrollView)
+[![CI Status](https://github.com/ealeksandrov/EARestrictedScrollView/workflows/CI/badge.svg?branch=master)](https://github.com/ealeksandrov/EARestrictedScrollView/actions)
 [![Version](https://img.shields.io/cocoapods/v/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/EARestrictedScrollView.svg?style=flat)](http://cocoadocs.org/docsets/EARestrictedScrollView)
